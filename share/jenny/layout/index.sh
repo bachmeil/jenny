@@ -50,6 +50,8 @@ cat << _EOF_
         padding: 1em;
         font-family: 'Roboto', monospace;
         line-height: 1.5em;
+        padding-left: 130px;
+        padding-top: 57px;
       }
       a { color: inherit; }
       .posts { list-style: none; padding: 0; margin: 1em 0; line-height: 1.6em; }
@@ -62,14 +64,17 @@ cat << _EOF_
       nav a+a:before { content: ' • '; }
       header { text-transform: uppercase; }
       header a { text-decoration: none }
+      hr { max-width: 650px; margin: 0px; }
     </style>
   </head>
   <body>
     <h1>${BLOG_TITLE}</h1>
+    <span style="width: 650px;"><hr></span>
     $(if [ "$TAGNAME" ]; then echo "<header><a href=\"/tag/$TAGNAME\">TAG: $TAGNAME</a></header>"; fi)
     <ul class="posts">
 			$(index_loop)
     </ul>
+    <hr>
 		$(nav)
   </body>
 </html>
