@@ -42,9 +42,9 @@ cat << _EOF_
         .heading .title:hover { text-decoration: underline; }
         .heading .stamp { color: #999; }
         .heading .stamp,
-        .home { display: inline-block; width: 2.66em; text-align:right; margin-right: 1.5em; }
-        .home { text-decoration: none; margin-bottom: 1.5em; text-align: left;  color: #cb4b16; } .home:hover { color: #dc322f; }
-        .contents { display: inline-block; max-width: 60ch; vertical-align: top; width: 100%; }
+        .home { display: inline-block; width: 5.66em; text-align:right; margin-right: 6.5em; }
+        .home { text-decoration: none; margin-bottom: 1.5em; text-align: right;  color: #cb4b16; } .home:hover { color: #dc322f; }
+        .contents { display: inline-block; max-width: 60ch; vertical-align: top; }
         .contents :first-child { margin-top: 0; }
         h1, h2, h3, h4, h5, h6 { font-size: 1em; font-weight: normal; text-transform: uppercase; margin: 2em 0 1em; }
         ol, ul { padding-left: 1em; }
