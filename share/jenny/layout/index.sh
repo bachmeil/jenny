@@ -46,7 +46,7 @@ cat << _EOF_
       body {
         background-color: white;
         color: #444;
-        font-size: 16px;
+        font-size: 22px;
         padding: 1em;
         font-family: 'Roboto', monospace;
         line-height: 1.5em;

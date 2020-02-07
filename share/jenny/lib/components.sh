@@ -52,7 +52,8 @@ index_insert () {
   fi
 
   # Create the export line for the index.sh template
-  IndexList+=("POST_URL=\"/post/$slug.html\" POST_TITLE=\"$(echo $title | sed 's#\"#\\\"#')\" POST_DATE=\"$post_date\" POST_DATE_RFC822=\"$post_date_rfc822\" TAGNAME=\"$_TAGNAME\"")
+  # Changed
+  IndexList+=("POST_URL=\"post/$slug.html\" POST_TITLE=\"$(echo $title | sed 's#\"#\\\"#')\" POST_DATE=\"$post_date\" POST_DATE_RFC822=\"$post_date_rfc822\" TAGNAME=\"$_TAGNAME\"")
 
   # Create page when we have enough for a page
   # Or when we don't have any more

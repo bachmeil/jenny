@@ -1,3 +1,7 @@
+# My Fork
+
+This is my fork of the Jenny repo. It has some minor styling changes and a change to link generation so that it works from the local file system (as opposed to a web server, which Jenny is designed for).
+
 # Jenny
 
 _Jenny_ is a static blog generator. Its aim is to work with minimal requirements and a small footprint while providing some modern conveniences.

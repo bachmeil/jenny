@@ -10,17 +10,19 @@ cat << _EOF_
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
       <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAANjY2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERERAAAAAAAAAAAAAAAAEQEBEQAAAAAAAAAAAAAAABEREREAAAAAAAAAAAAAAAARAREBAAAAAAAAAAAAAAAAEREBEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AADwDwAA//8AAPKPAAD//wAA8A8AAP//AADyLwAA//8AAPCPAAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <style>
         html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         body {
           background-color: white;
           color: #444;
-          font-size: 14px;
+          font-size: 22px;
           padding: 1em;
           font-family: 'Roboto', sans-serif;
           line-height: 1.5em;
         }
-        @media (min-width: 736px) { body { font-size: 16px } }
+        @media (min-width: 736px) { body { font-size: 22px } }
         article { padding: 0; margin: 1em 0; max-width: 70ch; }
         article a { color: #b58900; }
         article img { max-width: 100% }
@@ -28,7 +30,7 @@ cat << _EOF_
         article blockquote,
         article pre { background-color: #f4f4f4; margin: 0; padding: 1em; border-radius: 3px; border-bottom: 1px solid #DDD; }
         article pre,
-        article code { font-family: 'Fira Mono'; font-size: 14px; display: inline-block; color: #333; }
+        article code { font-family: 'Ubuntu Mono'; font-size: 22px; display: inline-block; color: #333; }
         article pre { word-break: break-all; white-space: pre-wrap; }
         article code::first-line { line-height: 0 }
         article blockquote :first-of-type { margin-top: 0; }
@@ -56,7 +58,7 @@ cat << _EOF_
     <body>
       <article>
       <div class="heading"><a href="$(echo $POST_URL)"><span class="stamp">$(echo $POST_DATE)</span><h1 class="title">$(echo $POST_TITLE)</h1></a></div>
-        <a href="/" class="home">←</a><div class="contents">
+        <a href="../index.html" class="home">←</a><div class="contents">
         $(echo "$POST_CONTENTS")
         <div class="tags">$(for i in $TAGS; do echo "<a href=\"/tag/$i\">$i</a>"; done;)</div>
         </div>
