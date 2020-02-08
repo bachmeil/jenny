@@ -55,7 +55,7 @@ if source_blogrc; then
   [ -z $POSTS_PER_PAGE ] && POSTS_PER_PAGE=5
   [ -z $DIST ] && DIST=$PWD/.dist
   [ -z "$LAYOUT_DIR" ] && LAYOUT_DIR=$SHARE_DIR/layout
-  [ -z "$MARKDOWN_COMMAND" ] && MARKDOWN_COMMAND="\$AWK -f \$SHARE_DIR/lib/md2html.awk"
+  [ -z "$MARKDOWN_COMMAND" ] && MARKDOWN_COMMAND="pandoc -t html --mathjax"
 
   while getopts ":d:p:l:m:vnc" opt; do
     case $opt in
