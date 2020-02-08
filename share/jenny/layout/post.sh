@@ -23,14 +23,14 @@ cat << _EOF_
           line-height: 1.5em;
         }
         @media (min-width: 736px) { body { font-size: 22px } }
-        article { padding: 0; margin: 1em 0; max-width: 70ch; }
+        article { padding: 0; margin: 1em 0; }
         article a { color: #b58900; }
         article img { max-width: 100% }
         article blockquote { border-left: 2px solid #CCC; }
         article blockquote,
-        article pre { background-color: #f4f4f4; margin: 0; padding: 1em; border-radius: 3px; border-bottom: 1px solid #DDD; }
+        article pre { background-color: #f4f4f4; margin: 0; padding: 1em; border-radius: 7px; border: 2px solid #DDD; }
         article pre,
-        article code { font-family: 'Ubuntu Mono'; font-size: 22px; display: inline-block; color: #333; }
+        article code { font-family: 'Ubuntu Mono'; font-size: 22px; color: #333; }
         article pre { word-break: break-all; white-space: pre-wrap; }
         article code::first-line { line-height: 0 }
         article blockquote :first-of-type { margin-top: 0; }
