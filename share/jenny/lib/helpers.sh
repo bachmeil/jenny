@@ -126,6 +126,10 @@ function get_post_date_int() {
   echo $(get_timestamp "$1") | $SED -e 's#\([0-9]\{4\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)#\1\2\3#'
 }
 
+function get_the_post_date {
+  echo $(get_timestamp "$1") | $SED -e 's#\([0-9]\{4\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)#\1-\2-\3#'
+}
+
 function get_post_date_rfc822() {
   $DATE --rfc-822 --date="$(stat -c %y "$1")"
 }

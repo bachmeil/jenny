@@ -66,7 +66,7 @@ cat << _EOF_
 				<article>
 					<div class="heading"><h1 class="title">$(echo $POST_TITLE)</h1></div>
 					$(echo "$POST_CONTENTS")
-					<span class="stamp">Last Update: $(echo $POST_DATE)</span>
+					<span class="stamp">Last Update: $(echo $POST_DATE_FULL)</span>
 					<div class="tags">$(for i in $TAGS; do echo "<a href=\"/tag/$i\">$i</a>"; done;)</div>
 					<a href="../index.html" class="home">← Back</a>
 				</article>
