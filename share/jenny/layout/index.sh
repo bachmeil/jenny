@@ -75,6 +75,7 @@ cat << _EOF_
 			$(index_loop)
     </ul>
     <hr>
+    ${INDEX_FOOTER}
 		$(nav)
   </body>
 </html>
