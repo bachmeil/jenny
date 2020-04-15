@@ -7,9 +7,6 @@ cat << _EOF_
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <title>$(echo $POST_TITLE)</title>
-/*      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>   
-      <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">   */
       <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
       <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAANjY2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARERERAAAAAAAAAAAAAAAAEQEBEQAAAAAAAAAAAAAAABEREREAAAAAAAAAAAAAAAARAREBAAAAAAAAAAAAAAAAEREBEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AADwDwAA//8AAPKPAAD//wAA8A8AAP//AADyLwAA//8AAPCPAAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -42,7 +39,7 @@ cat << _EOF_
         article hr { border: 0; border-bottom: 3px solid #CCC; }
         .heading { text-transform: uppercase; line-height: 1.6em; }
         .heading a { text-decoration: none; }
-        .heading .title { color: #222; display: inline-block; margin: 0 0 1em; font-weight:bold; font-family: Roboto, sans;  }
+        .heading .title { color: #222; display: inline-block; margin: 0 0 1em; font-weight:bold; font-family: sans;  }
         .heading .title:hover { text-decoration: underline; }
         .heading .stamp { color: #999; }
         .heading .stamp,
